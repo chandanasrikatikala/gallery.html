@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src=C:\Users\CHANDANA SRI\Downloads\burger (2).png id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="C:\Users\CHANDANA SRI\Downloads\burger (2).png" onclick="openFullImg(this.src)">
+        <img src="C:\Users\CHANDANA SRI\Downloads\fds (1).jpg" onclick="openFullImg(this.src)">
+        <img src="C:\Users\CHANDANA SRI\Downloads\fds (2).jpg" onclick="openFullImg(this.src)">
+        <img src="C:\Users\CHANDANA SRI\Downloads\fds (4).jpg" onclick="openFullImg(this.src)">
+        <img src="C:\Users\CHANDANA SRI\Downloads\fds (7).jpg" onclick="openFullImg(this.src)">
+        <img src="C:\Users\CHANDANA SRI\Downloads\fds (5).jpg" onclick="openFullImg(this.src)">
+        <img src="C:\Users\CHANDANA SRI\Downloads\fds (6).jpg" onclick="openFullImg(this.src)">
+        <img src="C:\Users\CHANDANA SRI\Downloads\men (1).jpg" onclick="openFullImg(this.src)">
+        
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox")
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+    </script>
+</body>
+</html>
